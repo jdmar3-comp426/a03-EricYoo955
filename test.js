@@ -24,12 +24,17 @@
 // console.log(removeKeys({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'},['password', 'age']));
 
 // Testing getSum
-import { getSum } from "./src/medium/medium_1.js";
-console.log("Testing getSum()");
-console.log(getSum([2,3,4,1]));
+// import { getSum } from "./src/medium/medium_1.js";
+// console.log("Testing getSum()");
+// console.log(getSum([2,3,4,1]));
 
 // Testing getMedian
 import { getMedian } from "./src/medium/medium_1.js";
 console.log("Testing getMedian())");
 console.log(getMedian([3,2,5,6,2,7,4,2,7,5]));
 console.log(getMedian([1,2,3,4,5]));
+
+// Testing getStatistics
+import { getStatistics } from "./src/medium/medium_1.js";
+console.log("Testing getStatistics()");
+console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
