@@ -16,4 +16,4 @@ console.log(identifyArray(['some', 3, [3, 4], false]));
 // Testing removeKeyNonDestructive
 import { removeKeyNonDestructive } from "./src/mild/mild_2.js";
 console.log("Testing removeKeyNonDestructive");
-console.log(removeKeyNonDestructive({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'}, password));
+console.log(removeKeyNonDestructive({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'}, "password"));
