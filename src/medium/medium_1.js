@@ -27,10 +27,11 @@ return sum;
  */
 export function getMedian(array) {
     array.sort();
-    if (array.length % 2 != 0) {
-        return array[array.length/2];
+    if (array.length % 2 == 1) {
+        return array[(array.length / 2) - .5];
+    } else {
+        return (array[array.length/2] + array[(array.length/2) - 1])/2
     }
-    return ((array[(array.length - 1) / 2] + array[array.length / 2]) / 2);
 }
 
 /**
