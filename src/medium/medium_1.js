@@ -26,13 +26,16 @@ return sum;
  * console.log(getMedian(array)); // 4.5
  */
 export function getMedian(array) {
-    let length = array.length;
-    let mid = Math.floor(length/2);
-    if (length % 2 != 0) {
-        return array[mid];
-    } else {
-        return (array[mid - 1] + array[mid]) / 2.0;
-    }
+    array.sort(function(a,b){
+      return a-b;
+    });
+  
+    var mid = Math.floor(array.length / 2);
+    
+    if (array.length % 2)
+      return array[mid];
+    
+    return (array[mid - 1] + array[mid]) / 2.0;
 }
 
 /**
