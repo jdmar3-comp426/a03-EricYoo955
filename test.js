@@ -14,11 +14,16 @@
 // console.log(identifyArray(['some', 3, [3, 4], false]));
 
 // Testing removeKeyNonDestructive
-import { removeKeyNonDestructive } from "./src/mild/mild_2.js";
-console.log("Testing removeKeyNonDestructive");
-console.log(removeKeyNonDestructive({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'}, "password"));
+// import { removeKeyNonDestructive } from "./src/mild/mild_2.js";
+// console.log("Testing removeKeyNonDestructive");
+// console.log(removeKeyNonDestructive({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'}, "password"));
 
 // Testing removeKeys
-import { removeKeys } from "./src/mild/mild_2.js";
-console.log("Testing removeKets");
-console.log(removeKeys({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'},['password', 'age']));
+// import { removeKeys } from "./src/mild/mild_2.js";
+// console.log("Testing removeKets");
+// console.log(removeKeys({name: 'Mr. Boss',title: 'boss',age: 33,password: 'pass123'},['password', 'age']));
+
+// Testing getSum
+import { getSum } from "./src/medium/medium_1.js";
+console.log("Testing getSum()");
+console.log(getSum([2,3,4,1]));
