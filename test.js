@@ -29,12 +29,17 @@
 // console.log(getSum([2,3,4,1]));
 
 // Testing getMedian
-import { getMedian } from "./src/medium/medium_1.js";
-console.log("Testing getMedian())");
-console.log(getMedian([3,2,5,6,2,7,4,2,7,5]));
-console.log(getMedian([1,2,3,4,5]));
+// import { getMedian } from "./src/medium/medium_1.js";
+// console.log("Testing getMedian())");
+// console.log(getMedian([3,2,5,6,2,7,4,2,7,5]));
+// console.log(getMedian([1,2,3,4,5]));
 
 // Testing getStatistics
-import { getStatistics } from "./src/medium/medium_1.js";
-console.log("Testing getStatistics()");
-console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
+// import { getStatistics } from "./src/medium/medium_1.js";
+// console.log("Testing getStatistics()");
+// console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
+
+// Testing allCarsStats
+import { allCarStats } from "./src/medium/medium_2.js";
+console.log("Testing allCarStats()");
+console.log(allCarStats);
