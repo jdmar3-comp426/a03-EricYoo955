@@ -25,6 +25,11 @@ export function sumToString(a, b) {
  *
  */
 export function getIncreasingArray(startNumber, endNumber) {
+    let array = [];
+    for (let i = startNumber; i <= endNumber; i++) {
+        array.push(i);
+    }
+    return array;
 
 }
 
@@ -36,7 +41,10 @@ export function getIncreasingArray(startNumber, endNumber) {
  * and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
  */
 export function maxAndMin(numbers) {
-
+    return {
+        max: Math.max(...numbers),
+        min: Math.min(...numbers)
+    }
 }
 
 /**
@@ -50,5 +58,13 @@ export function maxAndMin(numbers) {
  *
  */
 export function countArray(array) {
-
+    let counter = {};
+    array.forEach(item => {
+    if (counter[item]) {
+        counter[item]++;
+    } else {
+        counter[item] = 1;
+    }
+});
+return counter;
 }
