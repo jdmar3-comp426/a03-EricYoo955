@@ -28,7 +28,7 @@ return sum;
 export function getMedian(array) {
     array.sort();
     if (array.length % 2 == 1) {
-        return array[(array.length / 2) - .5];
+        return array[Math.floor((array.length / 2) - .5)];
     } else {
         return (array[array.length/2] + array[Math.floor((array.length/2) - 1)])/2
     }
