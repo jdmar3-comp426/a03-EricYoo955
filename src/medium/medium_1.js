@@ -30,7 +30,7 @@ export function getMedian(array) {
     if (array.length % 2 == 1) {
         return array[(array.length / 2) - .5];
     } else {
-        return (array[array.length/2] + array[(array.length/2) - 1])/2
+        return (array[array.length/2] + array[Math.floor((array.length/2) - 1)])/2
     }
 }
 
