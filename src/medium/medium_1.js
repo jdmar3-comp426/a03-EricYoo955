@@ -8,7 +8,11 @@ import {variance} from "./data/stats_helpers.js";
  * prototype functions. Very useful
  */
 export function getSum(array) {
-
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+return sum;
 }
 
 
@@ -22,7 +26,16 @@ export function getSum(array) {
  * console.log(getMedian(array)); // 4.5
  */
 export function getMedian(array) {
-
+    array.sort(function(a,b){
+      return a-b;
+    });
+  
+    var mid = Math.floor(array.length / 2);
+    
+    if (array.length % 2)
+      return array[mid];
+    
+    return (array[mid - 1] + array[mid]) / 2.0;
 }
 
 /**
@@ -45,6 +58,24 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
+    let lengthVal = array.length;
+    let sumVal = getSum(array);
+    let meanVal = (sumVal/lengthVal);
+    let medianVal = getMedian(array);
+    let minVal = Math.min(...array);
+    let maxVal = Math.max(...array);
+    let varianceVal = variance(array, meanVal);
+    let standardDeviationVal = Math.sqrt(varianceVal);
 
+    return {
+        length: lengthVal,
+        sum: sumVal,
+        mean: meanVal,
+        median: medianVal,
+        min: minVal,
+        max: maxVal,
+        variance: varianceVal,
+        standard_deviation: standardDeviationVal
+    }
 }
 
